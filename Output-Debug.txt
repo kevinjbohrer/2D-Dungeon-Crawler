@@ -1,0 +1,21 @@
+﻿'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Users\KJB\source\2D Dungeon Crawler\Debug\2D Dungeon Crawler.exe'. Symbols loaded.
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\apphelp.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Program Files\Norton Security\NortonData\22.20.5.39\Definitions\BASHDefs\20210419.011\UMEngx86.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\vcruntime140d.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbased.dll'. 
+The thread 0x1c3c has exited with code 0 (0x0).
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel.appcore.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcrt.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rpcrt4.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sspicli.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptbase.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcryptprimitives.dll'. 
+'2D Dungeon Crawler.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sechost.dll'. 
+The thread 0x30f0 has exited with code 0 (0x0).
+The thread 0x358 has exited with code 0 (0x0).
+The thread 0xbde4 has exited with code 0 (0x0).
+The thread 0x604c has exited with code 0 (0x0).
+The program '[49828] 2D Dungeon Crawler.exe' has exited with code 0 (0x0).
