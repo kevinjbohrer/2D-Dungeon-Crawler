@@ -139,7 +139,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="gameLoop.cpp" />
+    <ClCompile Include="gameMobile.cpp" />
+    <ClCompile Include="item.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dungeon.h" />
+    <ClInclude Include="gameCell.h" />
+    <ClInclude Include="gameLoop.h" />
+    <ClInclude Include="gameMap.h" />
+    <ClInclude Include="gameMenu.h" />
+    <ClInclude Include="gameMobile.h" />
+    <ClInclude Include="item.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="slime.h" />
+    <ClInclude Include="world.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
