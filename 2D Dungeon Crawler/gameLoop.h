@@ -2,6 +2,7 @@
 
 #include "gameMenu.h"
 #include "gameMap.h"
+#include "music.h"
 
 #ifndef GAMELOOP_H
 #define GAMELOOP_H

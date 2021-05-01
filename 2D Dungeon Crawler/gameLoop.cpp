@@ -5,13 +5,15 @@ GameLoop::GameLoop()
 	selectResolution();
 	GameMap newMap(gameRes);
 
-
+	Music music;
 	sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "2D Dungeon Crawler");
+	
 	//sf::RectangleShape rect(sf::Vector2f(800, 600));
 	//rect.setFillColor(sf::Color::Blue);
-
+	music.playMusic();
 	while (window.isOpen())
 	{
+		
 		sf::Event event;
 		while(window.pollEvent(event))
 		{

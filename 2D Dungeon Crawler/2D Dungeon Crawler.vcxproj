@@ -157,6 +157,7 @@
     <ClCompile Include="gameMobile.cpp" />
     <ClCompile Include="item.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="music.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dungeon.h" />
@@ -166,6 +167,7 @@
     <ClInclude Include="gameMenu.h" />
     <ClInclude Include="gameMobile.h" />
     <ClInclude Include="item.h" />
+    <ClInclude Include="music.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="slime.h" />
     <ClInclude Include="world.h" />
