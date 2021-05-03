@@ -2,15 +2,17 @@
 
 
 
-GameMobile::GameMobile()
+
+GameMobile::GameMobile(std::string n)
 {
-	name = "Bandit";
+	name = n;
 	maxHealth = 100;
 	currentHealth = 100;
 	attack = 12;
 	defense = 10;
 	gold = 81;
-	
+	textureName = "images/slime-fire.png";
+	location = sf::Vector2i(9, 3);
 	lootTable();
 	
 }
@@ -54,4 +56,14 @@ void GameMobile::printData()
 	cout << gold << " gold coins" << endl;
 	cout << endl;
 
+}
+
+sf::Vector2i GameMobile::getLocation()
+{
+	return location;
+}
+
+std::string GameMobile::getTexture()
+{
+	return textureName;
 }

@@ -20,7 +20,7 @@ bool GameCell::createSprite(std::string tex)
 		std::cout << "failed to load texture" << std::endl;
 		return false; 
 	}
-	texture.setSmooth(false);
+	texture.setSmooth(true);
 	sprite.setTexture(texture);
 	sprite.setTextureRect(sf::IntRect(0, 0, 32, 32));
 	return true;
@@ -35,3 +35,9 @@ int GameCell::getSpriteSize()
 {
 	return spriteSize;
 }
+
+bool GameCell::checkOpen()
+{
+	return isOpen;
+}
+

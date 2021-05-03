@@ -24,6 +24,8 @@ public:
 	bool createSprite(std::string);
 	int getSpriteSize();
 	sf::Sprite sprite;
+	bool checkOpen();
+	
 
 };
 

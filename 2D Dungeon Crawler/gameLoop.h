@@ -2,6 +2,7 @@
 
 #include "gameMenu.h"
 #include "gameMap.h"
+#include "player.h"
 #include "music.h"
 
 #ifndef GAMELOOP_H
@@ -11,15 +12,17 @@ class GameLoop
 {
 	float windowHeight;
 	float windowWidth;
-	sf::RenderWindow window;//(sf::VideoMode(windowWidth, windowHeight), "2D Dungeon Crawler");
-	sf::RectangleShape rect;
+	sf::RenderWindow window;
 	int gameRes;
-	//GameMap newMap();
-	
+	int gameMode;
+		
 public:
+	void defaultOpen();
 	void selectResolution();
+	void drawPlayer();
 	GameLoop();
 	void drawScreen();
+	void victoryCondition(bool);
 };
 
 
