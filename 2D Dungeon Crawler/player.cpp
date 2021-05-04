@@ -4,7 +4,7 @@
 Player::Player(std::string n) : GameMobile(n)
 {
 	location = sf::Vector2i(6, 18);
-	textureName = "images/mecha-guard.png";
+	textureName = "images/knight.png";
 	texture.loadFromFile(textureName);
 	
 }

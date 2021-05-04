@@ -11,7 +11,7 @@ GameMobile::GameMobile(std::string n)
 	attack = 12;
 	defense = 10;
 	gold = 81;
-	textureName = "images/slime-fire.png";
+	textureName = "images/ghoul.png";
 	location = sf::Vector2i(9, 3);
 	lootTable();
 	

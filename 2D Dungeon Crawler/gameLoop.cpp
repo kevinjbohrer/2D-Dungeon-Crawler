@@ -11,13 +11,16 @@ GameLoop::GameLoop()
 	GameMobile slime = GameMobile("Slime");
 	player.printData();
 
-	Music music;
+	
 	sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "2D Dungeon Crawler");
 	sf::ContextSettings settings = window.getSettings();
 	std::cout << "Open GL version:" << settings.majorVersion << "." << settings.minorVersion << std::endl;
 	std::cout << "Ignore this, this program is not using OpenGL" << std::endl;
 
+
+	Music music;
 	music.playMusic();
+
 
 
 	while (window.isOpen())
@@ -27,6 +30,20 @@ GameLoop::GameLoop()
 		sf::Event event;
 		while(window.pollEvent(event))
 		{	
+			window.clear(sf::Color::White);
+			for (int i = 0; i < newMap.gridLength; i++)
+			{
+				
+
+				for (int j = 0; j < newMap.gridLength; j++)
+				{
+					//std::cout << "drawing " << i << ", " << j << std::endl;
+					window.draw(newMap.mapCells[i][j]->staticSprite);
+
+
+				}
+			}
+			window.display();
 			if (newMap.exitLocation[0] == player.getLocation())
 			{
 				victoryCondition(true);
@@ -81,25 +98,15 @@ GameLoop::GameLoop()
 					std::cout << "Not a valid movement option" << std::endl;
 				}
 			}
-			window.clear();
-			//newMap.drawPlayer(player.getLocation());
+			
+			
 			newMap.drawPlayer(player.getLocation(), player.getTexture());
 			newMap.drawMobile(slime.getLocation(), slime.getTexture());
-			for (int i = 0; i < newMap.gridLength; i++)
-			{
 
-				for (int j = 0; j < newMap.gridLength; j++)
-				{
-					//std::cout << "drawing " << i << ", " << j << std::endl;
-					window.draw(newMap.mapCells[i][j]->staticSprite);
-
-
-				}
-			}
 			
-			//window.draw(newMap.mapCells[player.getLocation().y][player.getLocation().x]->sprite);
+			
 
-			window.display();
+			
 
 		}
 		
