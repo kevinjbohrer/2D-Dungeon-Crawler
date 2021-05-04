@@ -1,3 +1,4 @@
+#include "gameMenu.h"
 #include "gameLoop.h"
 #include "gameMap.h"
 #include "gameMobile.h"
@@ -8,6 +9,7 @@
 
 int main()
 {
+	GameMenu mainMenu;
 	//GameMobile bandit = GameMobile("bandit");
 	//Player player("Niin");
 	//player.printData();
