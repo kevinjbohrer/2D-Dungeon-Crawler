@@ -12,3 +12,10 @@
 - Have a menu system capable of offering option to start a new game, save current game and load an old game.
 - Allow the player to see character stats via menu system.
 
+### Alternate game mode "The Maze"
+- Move through a dark dungeon maze.
+- Conceal most of maze in darkness except in players vision.
+- Use a torch item to increase reveal radius.
+- Add wall lampstands to mark previously visited points.
+- Permenant scoreboard to record player attempts with completion times.
+- 
