@@ -2,7 +2,7 @@
 
 void GameMap::redrawCell()
 {
-	mapCells[10][4]->createSprite("images/floor-cobblestone-white.png");
+	mapCells[10][4]->createStaticSprite("images/floor-cobblestone-white.png");
 }
 
 
@@ -15,12 +15,12 @@ GameMap::GameMap(int res, int mode)
 void GameMap::drawPlayer(sf::Vector2i loc, std::string tex)
 {
 	//mapCells[loc.y][loc.x]->createSprite("images/farmer.png");
-	mapCells[loc.y][loc.x]->createSprite(tex);
+	mapCells[loc.y][loc.x]->createStaticSprite(tex);
 }
 
 void GameMap::drawMobile(sf::Vector2i loc, std::string tex)
 {
-	mapCells[loc.y][loc.x]->createSprite(tex);
+	mapCells[loc.y][loc.x]->createStaticSprite(tex);
 }
 
 void GameMap::initializeState(int res, int mode)
@@ -37,7 +37,7 @@ void GameMap::initializeState(int res, int mode)
 void GameMap::refreshMap(GameMap *active, GameMap *base, int x, int y)
 {
 	//active->mapCells[y][x] = base->mapCells[y][x];
-	active->mapCells[y][x]->createSprite("images/floor-cobblestone-white.png");
+	active->mapCells[y][x]->createStaticSprite("images/floor-cobblestone-white.png");
 	std::cout << "Refreshing sprite at " << x << ", " << y << std::endl;
 }
 

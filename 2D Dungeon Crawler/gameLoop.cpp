@@ -83,21 +83,21 @@ GameLoop::GameLoop()
 			}
 			window.clear();
 			//newMap.drawPlayer(player.getLocation());
-
+			newMap.drawPlayer(player.getLocation(), player.getTexture());
+			newMap.drawMobile(slime.getLocation(), slime.getTexture());
 			for (int i = 0; i < newMap.gridLength; i++)
 			{
 
 				for (int j = 0; j < newMap.gridLength; j++)
 				{
 					//std::cout << "drawing " << i << ", " << j << std::endl;
-					window.draw(newMap.mapCells[i][j]->sprite);
+					window.draw(newMap.mapCells[i][j]->staticSprite);
 
 
 				}
 			}
-			newMap.drawPlayer(player.getLocation(), player.getTexture());
-			newMap.drawMobile(slime.getLocation(), slime.getTexture());
-			window.draw(newMap.mapCells[player.getLocation().y][player.getLocation().x]->sprite);
+			
+			//window.draw(newMap.mapCells[player.getLocation().y][player.getLocation().x]->sprite);
 
 			window.display();
 
