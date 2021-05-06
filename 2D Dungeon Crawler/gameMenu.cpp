@@ -2,14 +2,14 @@
 
 GameMenu::GameMenu()
 {
-	initializeFont();
+	Texts welcomeText("Welcome");
 }
 
-bool GameMenu::initializeFont()
+void GameMenu::setupWelcome()
 {
-	if (!font.loadFromFile("fonts/arial.ttf"))
-	{
-		std::cout << "Font failed to load" << std::endl;
-		return false;
-	}
+	//welcomeText->displayPhase.setupText(welcomeText, sf::Vector2f(200, 200));
+
 }
+
+
+

@@ -160,6 +160,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="music.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="texts.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dungeon.h" />
@@ -172,6 +173,7 @@
     <ClInclude Include="music.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="slime.h" />
+    <ClInclude Include="texts.h" />
     <ClInclude Include="world.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

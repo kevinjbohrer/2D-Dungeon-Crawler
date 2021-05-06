@@ -9,7 +9,7 @@
 
 int main()
 {
-	GameMenu mainMenu;
+	//GameMenu mainMenu;
 	//GameMobile bandit = GameMobile("bandit");
 	//Player player("Niin");
 	//player.printData();

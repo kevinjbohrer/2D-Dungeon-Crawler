@@ -8,7 +8,10 @@ void GameMap::redrawCell()
 
 GameMap::GameMap(int res, int mode)
 {
+	Texts header = Texts("Welcome!");
+	//header.setupText()
 	initializeState(res, mode);
+	
 
 }
 

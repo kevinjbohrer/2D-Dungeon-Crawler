@@ -33,16 +33,15 @@ GameLoop::GameLoop()
 			window.clear(sf::Color::White);
 			for (int i = 0; i < newMap.gridLength; i++)
 			{
-				
-
 				for (int j = 0; j < newMap.gridLength; j++)
 				{
 					//std::cout << "drawing " << i << ", " << j << std::endl;
 					window.draw(newMap.mapCells[i][j]->staticSprite);
 
 
-				}
+				} 
 			}
+			newMap.header.drawInWindow(&window);
 			window.display();
 			if (newMap.exitLocation[0] == player.getLocation())
 			{

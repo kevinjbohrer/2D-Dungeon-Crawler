@@ -1,6 +1,7 @@
 #pragma once
 
 #include "gameCell.h"
+#include "texts.h"
 
 #ifndef GAMEMAP_H
 #define GAMEMAP_H
@@ -14,6 +15,7 @@ public:
 	std::vector<sf::Vector2i> exitLocation;
 	std::vector<std::vector<GameCell*>> mapCells;
 	const int gridLength = 20;
+	Texts header = Texts("");
 
 
 	GameMap(int, int);
