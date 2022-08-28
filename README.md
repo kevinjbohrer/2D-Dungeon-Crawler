@@ -1,10 +1,10 @@
 # 2D-Dungeon-Crawler
 
-### 2D Dungeon Crawler is simple RPG using the SFML library and C++.
+### 2D Dungeon Crawler is a simple RPG using the SFML library and C++.
 
 ### Goals:
 - Utilize derived classes to create predesigned mobs and a player.
-- Visually depect the map, player and monsters on the screen using SFML and sprites.
+- Visually depict the map, player and monsters on the screen using SFML and sprites.
 - Allow player to move freely around map on permitted tiles.
 - Use vectors to main inventories of item objects.
 - Allow players to fight monsters found on the map and kill and loot them or die themselves.
